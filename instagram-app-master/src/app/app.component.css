@@ -1,0 +1,170 @@
+.mat-toolbar {
+  background: linear-gradient(to left,  #00ff77, #003EFF);
+  margin-block-end: auto;
+  margin-block-start: auto;
+  color: white;
+  padding: 10px;
+}
+
+.mat-toolbar-dark {
+  background: linear-gradient(to left,  #FF416C, #FF4B2B);
+  margin-block-end: auto;
+  margin-block-start: auto;
+  color: white;
+  padding: 10px;
+}
+
+.mat-icon {
+  margin-bottom: 3px;
+}
+
+.mat-button {
+  margin-inline-start: 60px;
+  font-size: x-large;
+  color: #d659d6;
+}
+
+.mat-button:hover {
+  opacity: 80%;
+}
+
+.example-form-field {
+  background: transparent;
+  width: 200px;
+  padding: 1%;
+  margin: 8px 0;
+  border: 0px;
+  box-sizing: border-box;
+  color: #d659d6;
+  font-weight: bold;
+  margin-inline-start: 910px;
+  font-size: x-large;
+}
+
+::placeholder {
+  color: #d659d6;
+}
+
+.darkplaceholder::placeholder {
+  color: #020238;
+}
+
+.example-card {
+  margin-block-start: 25px;
+  max-width: 400px;
+  margin-inline-start: 480px;
+}
+  
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+  /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 29px;
+  margin-inline-start: auto;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+  /* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #020238;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(190, 140, 14);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+  
+input:checked + .slider {
+  background-color: #F3EDDE;
+}
+  
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+  
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.darkbackground{
+  background-color: #020238;
+}
+
+.darkfont {
+  color: #020238;
+}
+
+.no {
+  background-color: rgba(0, 0, 139, 0);
+  color: rgba(0, 64, 255, 0);
+}
+
+cdk-virtual-scroll-viewport::-webkit-scrollbar
+{
+    width: 12px;
+    background: -webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0.44, #00ff77),
+    color-stop(0.86, #003EFF));
+}
+
+cdk-virtual-scroll-viewport::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: #d659d6;
+}
+
+.darkscroll::-webkit-scrollbar
+{
+  width: 12px;
+    background: -webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0.44, #FF416C),
+    color-stop(0.86, #FF4B2B));
+}
+
+.darkscr::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: navajowhite;
+}

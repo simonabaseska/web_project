@@ -1,0 +1,26 @@
+<div>
+  <mat-toolbar class="mat-toolbar" id="toolbar">
+
+    <button class="mat-button" mat-button id="homebutton" onclick="document.location.reload()">
+      <img src="favicon.ico" height="50px" width="50px" id="logo">
+      Home
+    </button>
+
+    <form #search="ngForm" (ngSubmit)="onClickSubmit()">
+      <input class="example-form-field" type="text" name="search" placeholder="search" id="searchbar">
+      <!-- <input type = "submit" value = "submit">  Za da ne se gleda submit kopceto tuku samo so enter da si raboti -->
+    </form>
+
+    <label class="switch">
+      <input id="isDark" type="checkbox" (click)="checkbox1()">
+      <span class="slider round"></span>
+    </label>
+
+  </mat-toolbar>
+
+  <cdk-virtual-scroll-viewport [itemSize]="50" style="height: 690px" id="scroll" >
+    <app-post *cdkVirtualFor="let varposts of thePosts" [posts]="varposts" >
+    </app-post>
+  </cdk-virtual-scroll-viewport>
+
+</div>

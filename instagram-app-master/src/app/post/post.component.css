@@ -1,0 +1,99 @@
+.example-card {
+    margin: auto;
+    width: 500px;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+    background-color: white;
+}
+
+.example-card-dark {
+    margin: auto;
+    width: 500px;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+    background-color: #222269;
+}
+
+em {
+    font-weight: bold;
+}
+
+.spacer {
+    height: 1px;
+    background-color: gray;
+    margin-bottom: 15px;
+}
+
+.liked {
+    font-weight: bold;
+    color: crimson;
+    margin-right: 5px;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+}
+
+.heartImg {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    z-index: 2;
+    height: 250px;
+    width: auto;
+    margin: 0px;
+}
+
+.example-header-image {
+    margin-inline-start: 10px;
+    margin-inline-end: 25px;
+    margin-block-start: 10px;
+    margin-block-end: 20px;
+}
+
+.iconUrl {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.like-button:active {
+    background-color: red;
+}
+
+.share-button:active {
+    background-color: rgb(214, 89, 214);
+}
+
+.font {
+    color: rgba(255, 222, 173, 0.568);
+}
+
+.locationfont {
+  color: rgba(255, 222, 173, 0.479);
+}
+
+.comment-button {
+    margin-inline-start: 200px;
+}
+
+.post-comment {
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    padding: 1%;
+}
+
+.commentbutton {
+    background: transparent;
+    border-color: navajowhite;
+    border-radius: 7px;
+    border-width: 1px;
+    margin-inline-start: 10px;
+}
+
